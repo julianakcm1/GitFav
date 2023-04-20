@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Roboto Mono', monospace;
+  /* --text-color: #303030; */
+  --text-color: hsla(240, 9%, 89%, 1);
+
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%);
+
+  --btn-remove: hsla(355, 91%, 66%, 1);
+  --btn-search-bg: hsla(195, 91%, 25%, 1);
+
+  --tr-first-color: hsla(var(--hue), 72%, 13%, 1);
+  --tr-odd: hsla(195, 61%, 6%, 0.5);
+  --tr-even: hsla(192, 65%, 7%, 1);
+  --table-border: hsla(191, 31%, 42%, 1);
+
+  --bg-input-search: hsla(191, 65%, 7%, 1);
+
+  --color-zero-favorites: hsla(189, 4%, 32%, 1);
+
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  /* background-color: #2F2F33; */
+  background-color: #000000;
+  /* max-height: 100vh; */
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+/* O USUÁRIO NÃO VÊ, MAS O LEITOR DE TELA VÊ */
+.sr-only { /* screen read only */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* sem quebra - fica em uma linha só */
+  border-width: 0;
+}
+
+#app {
+  /* padding: 4rem 16rem 11.6rem; */
+  /* margin: 0 auto; */
+  margin: 11.5rem 16rem 11.6rem;
+  max-width: 112rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8.7rem;
+}
+
+header img {
+  width: 18.628rem;
+  height: 3.275rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  height: 4.8rem;
+  width: 46.2rem;
+  border: none;
+  border-radius: .5rem;
+  padding: 1.45rem 1.6rem;
+  background-color: var(--bg-input-search);
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.search button {
+  background-color: var(--btn-search-bg);
+  color: var(--text-color);
+  border-radius: .5rem;
+  border: none;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+
+  height: 4.8rem;
+  width: 17rem;
+  padding: 1.2rem 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.search button:hover,
+.search button:hover svg path {
+  color: var(--btn-search-bg);
+  background-color: #FFFFFF;
+  fill: var(--btn-search-bg);
+}
+
+.search button img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.table {
+  max-height: 68.8rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--table-border);
+  box-shadow: 0 1rem 2rem -1rem rgba(79, 74, 74, 0.3);
+
+  overflow: hidden;
+  overflow-y: overlay;
+}
+
+.table::-webkit-scrollbar {
+  width: 2.2rem;
+  height: 37.6rem;
+}
+
+.table::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: var(--table-border);
+  border-radius: 1rem;
+
+  border: .8rem solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* junta tudo */
+}
+
+table * {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: var(--text-color);
+}
+
+table th {
+  background: var(--tr-first-color);
+  text-align: left;
+  padding: 1.6rem 4rem;
+  font-weight: bold;
+}
+
+table th:first-child {
+  width: 35vw;
+}
+
+table tr:nth-child(even) { /* linhas pares */
+  background: var(--tr-even);
+  border-top: 1px solid var(--table-border);
+  border-bottom: 1px solid var(--table-border);
+}
+
+table tr:nth-child(odd) { /* linhas ímpares */
+  background: var(--tr-odd);
+}
+
+table td {
+  text-align: left;
+  padding: 2.4rem 4rem;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td button.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--btn-remove);
+  font-weight: bold;
+}
+
+.emptyFavorites {
+  display: flex;
+  height: 52.2rem;
+  width: 215%;
+  justify-content: center;
+  align-items: center;
+}
+
+tbody tr.emptyFavorites td {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  gap: 6rem;
+}
+
+.emptyFavorites td p {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  color: var(--color-zero-favorites);
+}
