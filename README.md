@@ -3,16 +3,14 @@
 <img src="https://user-images.githubusercontent.com/54086293/233529614-ffb7145c-45d1-48d1-9691-15fceb261519.png" width="60" height="60">
 
 # GitFav
-Curso Explorer - Rocketseat - Stage 6 - Desafio
 
 </div>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-contato">Contato</a><br><br>
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Functionalities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contato">Contact</a><br><br>
 </p>
 
 <div align="center">
@@ -25,38 +23,37 @@ Curso Explorer - Rocketseat - Stage 6 - Desafio
 
 <div id="-projeto">
 
-## :computer: Projeto
+## :computer: Project
 
-O objetivo deste projeto é adicionar usuários do Github e remover. 
+The purpose of this project is to add and remove Github users.
 
-A aplicação começa resetada, ou seja, sem usuário favorito.
+The application starts reset, that is, without a favorite user.
 
-Ao adicionar algum perfil, mostra o usuário, a quantidade de repositórios e seguidores dos perfis favoritados.
+When adding a profile, it shows the user, the number of repositories and followers of the favorite profiles.
 
-Caso tente adicionar um usuário já existente, a aplicação informa uma mensagem de erro.
-Ou caso tente adicionar um perfil inexistente no Github, a aplicação irá informar. E ao solicitar a remoção de algum usuário, será solicitada uma confirmação.
+If you try to add an existing user, the application reports an error message.
+Or if you try to add a non-existent profile on Github, the application will inform you. And when requesting the removal of a user, you will be asked for confirmation.
 
-Foram utilizados:
+Were used:
 
-- API do Github
-- try, catch e throw
+- Github API
+- try, catch and throw
 - JSON
-- Herança
-- Polimorfismo
-- Método estático e manipulação
-- Promessas
-- Uso e manipulação do localStorage
-- Assincronismo
+- Heritage
+- Polymorphism
+- Static method and manipulation
+- Promises
+- Use and manipulation of localStorage
+- Asynchronism
 - Promise function
 - Higher-order function (filter)
-- Criação e manipulação de tabela (HTML e js)
-- entre outros
+- Table creation and manipulation (HTML and js)
 
 </div>
 
 <div id="-tecnologias">
   
-## :rocket: Tecnologias
+## :rocket: Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -65,30 +62,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git
 - Github
-- Figma
+- [Figma](https://www.figma.com/design/oeA7xzDmM2TRkeIdmeiGlh/GITFAV?node-id=208%3A586&t=K8jyLQeJCPTdECFV-1)
 
 </div>
 
 <div id="-funcionalidades">
 
-## :gear: Funcionalidades
+## :gear: Functionalities
 
-- [x] Adicionar usuário
-- [x] Remover usuário
-
-</div>
-
-<div id="-layout">
-
-## :memo: Layout
-
-Para a visualização do layout do projeto(com adaptações), basta clicar no [link](https://www.figma.com/file/oeA7xzDmM2TRkeIdmeiGlh/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?node-id=208-586&t=ncLqtAnOdK7czRqQ-0).
+- [x] Add user
+- [x] Remove user
 
 </div>
 
 <div id="-contato">
 
-## :envelope: Contato
+## :envelope: Contact
 
 - E-mail: julianakcmelo@gmail.com
 - LinkedIn: https://www.linkedin.com/in/julianakcmelo/
